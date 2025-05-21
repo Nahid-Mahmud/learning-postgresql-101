@@ -43,3 +43,8 @@ SELECT *, age(CURRENT_DATE, dob) as "Student Age" FROM student;
 
 SELECT extract( month from '01-01-2025'::date);
 
+-- Extract month from student's date of birth
+SELECT student_id, first_name, last_name, 
+       EXTRACT(MONTH FROM dob::date) as birth_month
+FROM student;
+
