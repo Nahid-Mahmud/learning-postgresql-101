@@ -54,6 +54,7 @@ ALTER TABLE student
 SELECT * FROM student
     ORDER BY first_name ASC;
 
+EXPLAIN ANALYSE
 SELECT country from student
     ORDER BY country ASC;
 
