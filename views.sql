@@ -15,7 +15,7 @@ SELECT * FROM dept_avg_salary;
 
 
 
-
+ 
 
 
 
