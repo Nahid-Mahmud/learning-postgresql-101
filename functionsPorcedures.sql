@@ -24,18 +24,19 @@ SELECT * FROM employees;
 
 
 
-CREATE PROCEDURE remove_employee(id INT)
+CREATE PROCEDURE remove_employee2(id INT)
     LANGUAGE plpgsql
     AS
     $$
     BEGIN
     DELETE FROM employees
     WHERE employee_id = id;
+    RAISE NOTICE 'Employee with ID % has been removed.', id;
     END;
     $$;
 
 
-CALL remove_employee(1);
+CALL remove_employee2(2);
 
 
 
